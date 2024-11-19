@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <h1>🍙 ONIGIRI </h1>
+      <img style={{borderRadius: "20px"}} src="./onigiri-box.jpeg" />
         <p>マインドフルなアイデア</p>
     </>
   )
