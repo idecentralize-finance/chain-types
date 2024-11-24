@@ -1,0 +1,1 @@
+{"version":3,"file":"SolanaProvider.d.ts","sourceRoot":"","sources":["SolanaProvider.tsx"],"names":[],"mappings":"AACA,OAAO,EAAC,EAAE,EAAE,SAAS,EAAU,MAAM,OAAO,CAAC;AAM7C,UAAU,mBAAmB;IACzB,QAAQ,EAAE,SAAS,CAAC;IACpB,WAAW,EAAE,MAAM,CAAC;CACvB;AACD,eAAO,MAAM,cAAc,EAAE,EAAE,CAAC,mBAAmB,CAiBlD,CAAC"}

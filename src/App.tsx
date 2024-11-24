@@ -1,13 +1,11 @@
 import './App.css'
+import {WalletConnector} from "./index.ts";
 
 function App() {
-
-  return (
-    <>
-      <img style={{borderRadius: "20px"}} src="./onigiri-box.jpeg" />
-        <p>マインドフルなアイデア</p>
-    </>
-  )
+    return (<>
+            <WalletConnector/>
+            </>
+    );
 }
 
 export default App
