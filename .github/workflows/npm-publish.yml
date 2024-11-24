@@ -11,7 +11,7 @@ jobs:
     steps:
       # Step 1: Checkout repository
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       # Step 2: Set up Node.js environment
       - name: Set up Node.js
@@ -22,11 +22,13 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       # Step 4: Build the package
       - name: Build package
-        run: npm run build
+        run: |
+          export NODE_ENV=production
+          pnpm run build
 
       # Step 5: Publish to npm
       - name: Publish to npm
