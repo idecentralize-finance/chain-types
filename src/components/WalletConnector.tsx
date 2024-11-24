@@ -10,7 +10,7 @@ import {defaultWalletLogoData} from "../utils/logos.tsx";
 import {Logo} from "../types";
 import {toCamelCase} from "../helpers/index.tsx";
 
-import Button from "./Button.tsx";
+import Button from "./button/ConnectButton.tsx";
 import DisconnectButton from "./DisconnectButton.tsx";
 import ConnectedWallet from "./ConnectedWallet.tsx";
 

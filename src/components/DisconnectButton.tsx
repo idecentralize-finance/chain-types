@@ -1,6 +1,6 @@
 import {useChainTypes, ValidChainsType} from "../hooks/useChainType.tsx";
 import {Dispatch, SetStateAction} from "react";
-import Button from "./Button.tsx";
+import ConnectButton from "./button/ConnectButton.tsx";
 
 interface DisconnectButtonProps {
     chainType: ValidChainsType;
@@ -17,7 +17,7 @@ const DisconnectButton: React.FC<DisconnectButtonProps> = ({chainType, onCloseMo
 
     return (
         <>
-            <Button text={"Disconnect"} onClick={handleClick}/>
+            <ConnectButton text={"Disconnect"} onClick={handleClick}/>
         </>
     );
 };
