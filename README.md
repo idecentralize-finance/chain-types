@@ -2,7 +2,7 @@
 [![Version npm](https://img.shields.io/npm/v/@idecentralize-finance/chain-types.svg?logo=npm)](https://www.npmjs.com/package/@idecentralize-finance/chain-types)
 [![Node.js CI](https://github.com/idecentralize-finance/chain-types/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/idecentralize-finance/chain-types/actions/workflows/npm-publish.yml)
 [![Socket Badge](https://socket.dev/api/badge/npm/package/@idecentralize-finance/chain-types)](https://socket.dev/npm/package/@idecentralize-finance/chain-types)
-[![CodeQL](https://github.com/@idecentralize-finance/chain-types/actions/workflows/codeql.yml/badge.svg)](https://github.com/@idecentralize-finance/chain-types/actions/workflows/codeql.yml)
+[![CodeQL](https://github.com/idecentralize-finance/chain-types/actions/workflows/codeql.yml/badge.svg)](https://github.com/idecentralize-finance/chain-types/actions/workflows/codeql.yml)
 
 
 # Wallet Connector Package
