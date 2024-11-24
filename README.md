@@ -34,16 +34,23 @@ Create a wagmi.ts file to configure your EVM wallets and chains:
 import { createConfig } from 'wagmi';
 import { mainnet, sepolia } from 'wagmi/chains';
 import { injected, walletConnect, coinbaseWallet } from 'wagmi/connectors';
+import { createConfig, http } from 'wagmi';
+import { mainnet, sepolia } from 'wagmi/chains';
+import { injected, walletConnect, coinbaseWallet } from 'wagmi/connectors';
 
 export const config = createConfig({
-  chains: [mainnet, sepolia],
-  connectors: [
-    injected(),
-    walletConnect({
-      projectId: process.env.VITE_WC_PROJECT_ID,
-    }),
-    coinbaseWallet(),
-  ],
+    chains: [mainnet, sepolia],
+    connectors: [
+        injected(),
+        walletConnect({
+            projectId: process.env.VITE_WC_PROJECT_ID || '',
+        }),
+        coinbaseWallet(),
+    ],
+    transports: {
+        [mainnet.id]: http('https://mainnet.example.com'),
+        [sepolia.id]: http('https://sepolia.example.com'),
+    },
 });
 ```
 
@@ -54,7 +61,7 @@ Create a solana.ts file to configure your Solana wallets and chains:
 > Note: The name resolving feature SNS requires rpc endpoints that provide program ID and cluster information.
 
 ```jsx
-export const rpcEndpoint = '<YOUR_API_URL>'
+export const rpcEndpoint = '<YOUR_RPC_URL>'
 ```
 
 ## Usage
@@ -62,7 +69,7 @@ Wrap your application with the AppProvider component to enable wallet integratio
 
 ```jsx
 import { createRoot } from 'react-dom/client'
-import { AppProvider } from '@idecentralize-finance/wallet-connector';
+import { ChainTypesProvider } from '@idecentralize-finance/chain-types';
 import { config } from './wagmi.ts'
 import { rpcEndpoint } from "./solana.ts";
 import App from './App.tsx'

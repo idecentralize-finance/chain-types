@@ -1,6 +1,6 @@
 {
-  "name": "chain-types",
-  "version": "0.0.1",
+  "name": "@idecentralize-finance/chain-types",
+  "version": "0.0.2",
   "description": "A wallet connector library for EVM and Solana chains",
   "type": "module",
   "main": "dist/index.js",
@@ -56,5 +56,13 @@
     "React"
   ],
   "author": "Decentralizer",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idecentralize-finance/chain-types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/idecentralize-finance/chain-types/issues"
+  },
+  "homepage": "https://github.com/idecentralize-finance/chain-types#readme"
 }
