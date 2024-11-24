@@ -1,7 +1,5 @@
 import { MouseEvent } from 'react';
 import React from 'react';
-import { Button, Shimmer, Text } from './classes';
-import { GlobalStyles } from './global';
 
 // Define the props type
 interface ButtonProps {
@@ -26,11 +24,11 @@ const ConnectButton: React.FC<ButtonProps> = ({ text = 'Button', color = 'primar
 
     return (
         <>
-            <GlobalStyles />
-            <Button onClick={onClick}>
-                <Text>{text}</Text>
-                <Shimmer />
-            </Button>
+
+            <button className="chain-type-connect" onClick={onClick}>
+                <span className="connect-text">{text}</span>
+                <span className="connect-shimmer"></span>
+            </button>
         </>
     );
 };

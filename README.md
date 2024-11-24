@@ -16,7 +16,6 @@ A versatile React-based wallet connector package that supports Solana Name Servi
 - Custom RPC Support: Define and pass your own RPC endpoints.
 - Extensibility: Add support for new chains and networks with existing configuration.
 
-
 ## Installation
 Install the package using your preferred package manager.
 ```bash
@@ -99,5 +98,23 @@ function App() {
             <WalletConnector/>
         </>
     );
+}
+```
+## Styling CSS
+
+3 classes are available for styling the wallet connector component button.
+> plugin to come with default styling/theme
+
+```css
+.chain-type-connect{
+    // styling for the connect button
+}
+
+.connect-shimmer{
+    // styling for the shimmer effect
+}
+
+.connect-text{
+    // styling for the text
 }
 ```
