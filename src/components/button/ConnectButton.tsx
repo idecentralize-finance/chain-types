@@ -27,8 +27,8 @@ const ConnectButton: React.FC<ButtonProps> = ({ text = 'Button', color = 'primar
     return (
         <>
             <GlobalStyles />
-            <Button>
-                <Text>Click Me</Text>
+            <Button onClick={onClick}>
+                <Text>{text}</Text>
                 <Shimmer />
             </Button>
         </>
