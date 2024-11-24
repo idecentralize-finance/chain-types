@@ -1,6 +1,6 @@
 {
   "name": "@idecentralize-finance/chain-types",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A wallet connector library for EVM and Solana chains",
   "type": "module",
   "main": "dist/index.cjs.js",
