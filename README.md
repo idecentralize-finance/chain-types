@@ -4,6 +4,7 @@
 [![Socket Badge](https://socket.dev/api/badge/npm/package/@idecentralize-finance/chain-types)](https://socket.dev/npm/package/@idecentralize-finance/chain-types)
 [![CodeQL](https://github.com/@idecentralize-finance/chain-types/actions/workflows/codeql.yml/badge.svg)](https://github.com/@idecentralize-finance/chain-types/actions/workflows/codeql.yml)
 
+
 # Wallet Connector Package
 A versatile React-based wallet connector package that supports Solana Name Service (SNS) and ENS (Ethereum Name Service). It simplifies wallet integration for Solana and Ethereum chains, allowing developers to seamlessly resolve domain names, avatars, and manage wallet connections.
 
