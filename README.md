@@ -20,13 +20,13 @@ A versatile React-based wallet connector package that supports Solana Name Servi
 ## Installation
 Install the package using your preferred package manager.
 ```bash
-    pnpm install wallet-connector-package
+    pnpm install @idecentralize-finance/chain-types
 ```
 ```bash
-    yarn install wallet-connector-package
+    yarn install @idecentralize-finance/chain-types
 ```
 ```bash
-    npm add wallet-connector-package
+    npm add @idecentralize-finance/chain-types
 ```
 
 ## Configuration
