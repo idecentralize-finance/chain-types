@@ -1,0 +1,40 @@
+name: Publish to NPM
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # Step 4: Build the package
+      - name: Build package
+        run: |
+          export NODE_ENV=production
+          pnpm run build
+
+      # Step 5: Publish to npm
+      - name: Publish to npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --access public
